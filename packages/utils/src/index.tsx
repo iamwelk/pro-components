@@ -1,7 +1,7 @@
 import LabelIconTip from './components/LabelIconTip';
 import FieldDropdown from './components/FiledDropdown';
 import FieldLabel from './components/FieldLabel';
-import ListToolBar from './components/ListToolBar';
+import ListToolBar, { ListToolBarProps } from './components/ListToolBar';
 import BatchOperationBar from './components/BatchOperationBar';
 
 import isBrowser from './isBrowser';
@@ -44,6 +44,7 @@ export type {
 export {
   LabelIconTip,
   ListToolBar,
+  ListToolBarProps,
   FieldDropdown,
   FieldLabel,
   BatchOperationBar,
