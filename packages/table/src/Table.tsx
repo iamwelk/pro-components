@@ -865,7 +865,7 @@ const ProTable = <T extends {}, U extends ParamsType>(
  * 更快 更好 更方便
  * @param props
  */
-const ProviderWarp = <T, U extends { [key: string]: any } = {}>(props: ProTableProps<T, U>) => {
+const ProviderWrap = <T, U extends { [key: string]: any } = {}>(props: ProTableProps<T, U>) => {
   const { getPrefixCls } = useContext(AntdConfigContext);
   return (
     <Container.Provider initialState={props}>
@@ -878,4 +878,4 @@ const ProviderWarp = <T, U extends { [key: string]: any } = {}>(props: ProTableP
   );
 };
 
-export default ProviderWarp;
+export default ProviderWrap;
